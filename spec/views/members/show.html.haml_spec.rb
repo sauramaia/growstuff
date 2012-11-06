@@ -6,7 +6,8 @@ describe "members/show" do
       :username => "pie",
       :password => "steak&kidney",
       :email => "steak-and-kidney@pie.com",
-      :created_at => Time.new
+      :created_at => Time.new,
+      :slug => "pie"
     ))
   end
 
