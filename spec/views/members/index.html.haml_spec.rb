@@ -2,16 +2,18 @@ require 'spec_helper'
 
 describe "members/index" do
   before(:each) do
-    assign(:users, [
+    assign(:members, [
       stub_model(User,
 	:username => "user1", 
 	:email => "user1@example.com",
-	:password => "password"
+	:password => "password",
+        :slug => "user1"
       ),
       stub_model(User,
 	:username => "user2", 
 	:email => "user2@example.com",
-	:password => "password"
+	:password => "password",
+        :slug => "user2"
       )
     ])
   end

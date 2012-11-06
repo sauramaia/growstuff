@@ -19,6 +19,7 @@ describe MembersController do
   describe "GET index" do
     it "assigns all members as @members" do
       user = User.create! valid_attributes
+      user.slug = "irrelevant"
       get :index, {}, valid_session
       assigns(:members).should eq([user])
     end

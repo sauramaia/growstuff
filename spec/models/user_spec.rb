@@ -7,6 +7,7 @@ describe 'user' do
     @user.email = "example@example.com"
     @user.username = "someone"
     @user.password = "irrelevant"
+    @user.slug = "irrelevant"
   end
 
   it 'should save a basic user' do
