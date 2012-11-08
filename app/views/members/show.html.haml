@@ -1,4 +1,4 @@
-- content_for :title, "#{@user.username}"
+- content_for :title, "#{@member.username}"
 
 %p
-  = "A Growstuff member since #{@user.created_at.strftime("%B %d, %Y")}."
+  = "A Growstuff member since #{@member.created_at.strftime("%B %d, %Y")}."

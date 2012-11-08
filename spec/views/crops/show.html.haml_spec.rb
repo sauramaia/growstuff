@@ -19,6 +19,7 @@ describe "crops/show" do
 
     before(:each) do
       @user = User.create(:email => "growstuff@example.com", :password => "irrelevant")
+      @user.slug = "irrelevant"
       @user.confirm!
       sign_in @user
       render
